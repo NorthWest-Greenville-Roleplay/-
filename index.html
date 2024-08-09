@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGR</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #f5f5f5, #eaeaea);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        html {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4a90e2, #f5a623);
+            color: #fff;
+            padding: 3rem 0;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 1rem 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        section {
+            background: linear-gradient(135deg, #4a90e2, #f5a623);
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 0;
+            background: #f5a623;
+            transition: width 0.3s;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            background: #fff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        section h2 {
+            margin-top: 0;
+            color: #4a90e2;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        section#rules {
+            background: linear-gradient(135deg, #4a90e2, #f5a623);
+        }
+
+        section#about {
+            background: linear-gradient(135deg, #4a90e2, #f5a623);
+        }
+
+        section#services {
+            background: linear-gradient(135deg, #4a90e2, #f5a623);
+        }
+
+        section#ingame-rules {
+            background: linear-gradient(135deg, #4a90e2, #f5a623);
+        }
+
+        section#content {
+            background: linear-gradient(135deg, #4a90e2, #f5a623);
+        }
+
+        section#join {
+            background: linear-gradient(135deg, #4a90e2, #f5a623);
+        }
+
+        .join-button {
+            display: inline-block;
+            padding: 15px 30px;
+            color: #fff;
+            background-color: #4a90e2;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .join-button:hover {
+            background-color: #50e3c2;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: linear-gradient(135deg, #4a90e2, #f5a623);
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top-right-radius: 50px;
+            border-top-left-radius: 50px;
+            transition: all 0.3s;
+            margin-top: 2rem;
+            cursor: pointer;
+        }
+
+        footer:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 2rem 1rem;
+            }
+            header h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="header-text">Welcome to NorthWest Greenville Roleplay</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#services">Public Services</a></li>
+                <li><a href="#ingame-rules">In-Game Rules</a></li>
+                <li><a href="#content">Content</a></li>
+                <li><a href="#join">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about" class="fade-in">
+        <h2>About Us</h2>
+        <p><strong>NorthWest Greenville Roleplay is a community-driven roleplay server on Discord. We provide a fun and engaging environment for roleplaying enthusiasts with various scenarios and events.</strong></p>
+    </section>
+    <section id="rules" class="fade-in">
+        <h2>Server Rules</h2>
+        <ul>
+            <li><strong>1.</strong> No Swearing</li>
+            <li><strong>2.</strong> No Bullying</li>
+            <li><strong>3.</strong> No Spamming</li>
+            <li><strong>4.</strong> Be respectful to everyone</li>
+            <li><strong>5.</strong> No mass ping spam</li>
+            <li><strong>6.</strong> Must be 13+</li>
+            <li><strong>7.</strong> No Discord invites</li>
+            <li><strong>8.</strong> Follow Discord's Terms of Service</li>
+        </ul>
+    </section>
+    <section id="services" class="fade-in">
+        <h2>Public Services</h2>
+        <ul>
+            <li><strong>Wisconsin State Patrol</strong></li>
+            <li><strong>Outagamie County Sheriff's Office</strong></li>
+            <li><strong>Fox Valley Metro Police Department</strong></li>
+            <li><strong>National Park Service</strong></li>
+            <li><strong>Greenville Fire Department</strong></li>
+            <li><strong>Department of Transportation</strong></li>
+        </ul>
+    </section>
+    <section id="ingame-rules" class="fade-in">
+        <h2>In-Game Rules</h2>
+        <ul>
+            <li><strong>Yield to emergency vehicles.</strong></li>
+            <li><strong>Request voids from staff if necessary.</strong></li>
+            <li><strong>Wait 15 minutes before committing another crime.</strong></li>
+            <li><strong>Follow laws during peacetime.</strong></li>
+            <li><strong>Priority scenes must be announced by staff.</strong></li>
+            <li><strong>Respect all players and scenes.</strong></li>
+        </ul>
+    </section>
+    <section id="content" class="fade-in">
+        <h2>Content</h2>
+        <p><strong>Our server features various content to enhance your roleplaying experience, including announcements, event schedules, and roleplay tips.</strong></p>
+        <h3><strong>YouTube</strong</h3>
+        <p><strong>Subscribe to our YouTube channel for the latest videos and tutorials.</strong></p>
+        <a href="https://www.youtube.com/@NwGrRl" target="_blank" class="join-button">Subscribe on YouTube</a>
+    </section>
+    <section id="join" class="fade-in">
+        <h2><strong>Join Us</strong></h2>
+        <p><strong>If you're ready to join our vibrant roleplaying community, click the button below to get started. We can't wait to see you in NorthWest Greenville Roleplay!</strong></p>
+        <a href="https://discord.gg/CHDtcdUZAX" target="_blank" class="join-button">Join the Community</a>
+    </section>
+    <footer>
+        <p id="footer-text">NGR &copy; 2024. All Rights Reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = document.querySelectorAll('section');
+
+            sections.forEach((section, index) => {
+                section.classList.add('fade-in');
+            });
+        });
+
+        document.getElementById("footer-text").addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+</body>
+</html>
